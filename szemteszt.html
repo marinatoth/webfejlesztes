@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta name="author" content="Tóth Marina">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <meta name="deccribtion" content="Avatar: Az utolsó léghajlító animációs sorozat bemutatása">
+
+    <title>A:TLA - Személyiségteszt</title>
+    <link rel="shortcut icon" href="kepek/favicon/favicon_siklo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script_avatar.js"></script>
+    
+</head>
+<body>
+    <header><a href="index.html"><img class="fejlec" src="kepek/fejlec.png" alt="Avatar"></a></header>
+    <nav>
+    <ul>
+        <li><a href="index.html" >Szereplők</a></li>
+        <li><a href="world.html">Elemek</a></li>
+        <li><a href="#" class="active">Személyiségteszt</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="kerdoiv.html">Kérdőív</a></li>
+     </ul>
+    </nav>
+    <form class="quizform" id="szemelyiseg">
+        <table class="szemteszt">
+            <caption class="quiz">Milyen idomár lennél? - Derítsd ki könnyedén!</caption>
+            <tr>
+                <td>Melyik illik rád a legjobban?</td>
+            </tr>
+            <tr>
+                <td class="szemteszt">
+                    <img src="kepek/szemteszt_kepek/kezek.jpg" alt="4 féle kéztípus" class="szemteszt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <input type="radio" name="elso" id="egy1"><label for="egy1">1. tenyér</label><br>
+                    <input type="radio" name="elso" id="egy2"><label for="egy2">2. tenyér</label><br>
+                    <input type="radio" name="elso" id="egy3"><label for="egy3">3. tenyér</label><br>
+                    <input type="radio" name="elso" id="egy4"><label for="egy4">4. tenyér</label><br>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Kire hasonlítasz személyiség terén leginkább?</td>
+            </tr>
+            <tr>
+                <td class="quiz2">
+                    <label for="ketto1"><img class="quiz2" src="cast/kep1.jpg" alt="Avatar Aang"></label><input type="radio" name="masodik" id="ketto1">
+                    <label for="ketto2"><img class="quiz2" src="cast/kep2.jpg" alt="Katara"></label><input type="radio" name="masodik" id="ketto2">
+                    <label for="ketto3"><img class="quiz2" src="cast/kep4.jpg" alt="Toph"></label><input type="radio" name="masodik" id="ketto3">
+                    <label for="ketto4"><img class="quiz2" src="cast/kep5.jpg" alt="Zuko"></label><input type="radio" name="masodik" id="ketto4"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Melyik évszakban érzed a legjobban magad?</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="harmadik" id="harom1"><label for="harom1">Tél</label><br>
+                    <input type="radio" name="harmadik" id="harom2"><label for="harom2">Nyár</label><br>
+                    <input type="radio" name="harmadik" id="harom3"><label for="harom3">Ősz</label><br>
+                    <input type="radio" name="harmadik" id="harom4"><label for="harom4">Tavasz</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Mi a kedvenc számod?</td>
+            </tr>
+            <tr>
+                <td><input type="number" name="negyedik" id="negy" placeholder="15"></td>
+            </tr>
+            <tr>
+                <td>Mi a Harry Potter házad?</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" list="otodik" name="otodikhez" placeholder="Ide írd">
+                    <datalist id="otodik">
+                        <option id="ot1" value="Mardekár"></option>
+                        <option id="ot2" value="Griffendél"></option>
+                        <option id="ot3" value="Hugrabug"></option>
+                        <option id="ot4" value="Hollóhát"></option>
+                    </datalist>                    
+                </td>
+            </tr>
+            <tr>
+                <td>Melyik szín fejez ki a legjobban?</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="hatodik" id="hat1"><label for="hat1">Piros</label><br>
+                    <input type="radio" name="hatodik" id="hat2"><label for="hat2">Kék</label><br>
+                    <input type="radio" name="hatodik" id="hat3"><label for="hat3">Zöld</label><br>
+                    <input type="radio" name="hatodik" id="hat4"><label for="hat4">Sárga</label><br>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Kinek dolgozol nap, mint nap?</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="hetedik" id="het1"><label for="het1">A világnak</label><br>
+                    <input type="radio" name="hetedik" id="het2"><label for="het2">Magamnak</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Melyiket tartod a legfontosabbnak?</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="nyolcadik" id="nyolc1"><label for="nyolc1">Szabadság</label><br>
+                    <input type="radio" name="nyolcadik" id="nyolc2"><label for="nyolc2">Erő</label><br>
+                    <input type="radio" name="nyolcadik" id="nyolc3"><label for="nyolc3">Alkalmazkodó képesség</label><br>
+                    <input type="radio" name="nyolcadik" id="nyolc4"><label for="nyolc4">Biztonság</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><input type="button" value="Kész vagyok!" onclick="Teszteles()">
+                    <input type="reset" value="Törlés" onclick="vissza()"><br>
+                    <p id="teszt_eredmeny"></p>
+                    <p id="t"></p>
+                    <img src="kepek/szemteszt_kepek/terkep.jpg" alt="Világtérkép" id="eredmeny_kep">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <img src="kepek/arrow.png" alt="Felfelé mutató nyíl" class="nyil" onclick="Fel()">
+    <footer>Az oldal kizárólag oktatási célokat szolgál. &copy; Tóth Marina Corvinus 2023</footer>
+    <script src="script_avatar.js"></script>
+    
+</body>
+</html>

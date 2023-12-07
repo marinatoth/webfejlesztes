@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta name="author" content="Tóth Marina">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <meta name="deccribtion" content="Avatar: Az utolsó léghajlító animációs sorozat bemutatása">
+
+    <title>A:TLA - Quiz</title>
+    <link rel="shortcut icon" href="kepek/favicon/favicon_siklo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><a href="index.html"><img class="fejlec" src="kepek/fejlec.png" alt="Avatar"></a></header>
+    <nav>
+        <ul>
+            <li><a href="index.html" >Szereplők</a></li>
+            <li><a href="world.html">Elemek</a></li>
+            <li><a href="szemteszt.html">Személyiségteszt</a></li>
+            <li><a href="#" class="active">Quiz</a></li>
+            <li><a href="kerdoiv.html">Kérdőív</a></li>
+         </ul>
+        </nav>
+    <form class="quizform">
+    <table class="quiz">
+        <caption class="quiz">Mennyire ismered az Avatart? - Teszteld a tudásod!</caption>
+        <tr>
+            <td>Ki volt az első tűzidomár?</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="elso" id="egy1"><label for="egy1">a Nap</label><br>
+                <input type="radio" name="elso" id="egy2"><label for="egy2">a Napharcosok</label><br>
+                <input type="radio" name="elso" id="egy3"><label for="egy3">a sárkányok</label><br>
+                <input type="radio" name="elso" id="egy4"><label for="egy4">a Tűz Ura</label>
+                <p id="eredmeny1" class="quiz_eredmeny"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Ki volt Sokka első barátnője?</td>
+        </tr>
+        <tr>
+            <td class="quiz2">
+                <label for="ketto1"><img class="quiz2" src="cast/kep6.jpg" alt="Suki"></label><input type="radio" name="masodik" id="ketto1">
+                <label for="ketto2"><img class="quiz2" src="cast/kep2.jpg" alt="Katara"></label><input type="radio" name="masodik" id="ketto2">
+                <label for="ketto3"><img class="quiz2" src="kepek/teszt/kep_quiz1.jpg" alt="Yue hercegnő"></label><input type="radio" name="masodik" id="ketto3">
+                <label for="ketto4"><img class="quiz2" src="cast/kep4.jpg" alt="Toph"></label><input type="radio" name="masodik" id="ketto4">
+                <p id="eredmeny2" class="quiz_eredmeny"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Mely találmányok köthetők Sokkához?</td>
+        </tr>
+        <tr>
+            <td class="quiz2">
+                <label for="harom1"><img class="quiz2" src="kepek/teszt/harom1.jpg" alt="Légahjó"></label><input type="checkbox" name="harmadik1" id="harom1">
+                <label for="harom2"><img class="quiz2" src="kepek/teszt/harom2.jpg" alt="Tengeralattjáró"></label><input type="checkbox" name="harmadik2" id="harom2">
+                <label for="harom3"><img class="quiz2" src="kepek/teszt/harom3.jpg" alt="Tank"></label><input type="checkbox" name="harmadik3" id="harom3">
+                <label for="harom4"><img class="quiz2" src="kepek/teszt/harom4.jpg" alt="Felüljáró vonat"></label><input type="checkbox" name="harmadik4" id="harom4">
+                <p id="eredmeny3" class="quiz_eredmeny"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Minek nevezték Toph Beifongot?</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="negyedik" id="negy1"><label for="negy1">Vak Bandita</label><br>
+                <input type="radio" name="negyedik" id="negy2"><label for="negy2">Pici Láb</label><br>
+                <input type="radio" name="negyedik" id="negy3"><label for="negy3">Bajkeverő Beifong</label><br>
+                <input type="radio" name="negyedik" id="negy4"><label for="negy4">a Szikla</label>
+                <p id="eredmeny4" class="quiz_eredmeny"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Hány éves Avatar Aang a sorozat elején?</td>
+        </tr>
+        <tr>
+            <td>
+                <select name="otodik" id="ot">
+                    <option id="11">11</option>
+                    <option id="12">12</option>
+                    <option id="13">13</option>
+                    <option id="14">14</option>
+                    <option id="15">15</option>
+                    <option id="112">112</option>
+                    <option id="113">113</option>
+                    <option id="114">114</option>
+                    <option id="115">115</option>
+                </select>
+                <p id="eredmeny5" class="quiz_eredmeny"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Hogyan szerezte Zuko a sebhelyét?</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="hatodik1" id="hat1"><label for="hat1">Az apjától</label><br>
+                <input type="checkbox" name="hatodik2" id="hat2"><label for="hat2">A Tűz Urától</label><br>
+                <input type="checkbox" name="hatodik3" id="hat3"><label for="hat3">Egy Agni Kai során</label><br>
+                <input type="checkbox" name="hatodik4" id="hat4"><label for="hat4">Tiszteletlen volt egy hadvezérrel szemben</label><br>
+                <p id="eredmeny6" class="quiz_eredmeny"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Ki az Avatar csapat tagja?</td>
+        </tr>
+        <tr>
+            <td class="quiz2">
+                <label for="het1"><img class="quiz2" src="cast/kep20.jpg" alt="Appa"></label><input type="checkbox" name="hetedik1" id="het1">
+                <label for="het2"><img class="quiz2" src="kepek/teszt/het1.jpg" alt="Vöröspanda"></label><input type="checkbox" name="hetedik2" id="het2">
+                <label for="het3"><img class="quiz2" src="cast/kep30.jpg" alt="Momo"></label><input type="checkbox" name="hetedik3" id="het3">
+                <label for="het4"><img class="quiz2" src="kepek/teszt/het2.jpg" alt="Sólyom"></label><input type="checkbox" name="hetedik4" id="het4">
+                <label for="het5"><img class="quiz2" src="kepek/teszt/het3.jpg" alt="Szarvaskutya"></label><input type="checkbox" name="hetedik5" id="het5">
+                <p id="eredmeny7" class="quiz_eredmeny"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Melyik állítás HAMIS Aangról, az Avatarról?</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="nyolcadik1" id="nyolc1"><label for="nyolc1">Vegetáriánus</label><br>
+                <input type="checkbox" name="nyolcadik2" id="nyolc2"><label for="nyolc2">Legjobb barátja a YipYip nevű repülő légbölénye</label><br>
+                <input type="checkbox" name="nyolcadik3" id="nyolc3"><label for="nyolc3">Sokka és Katara véletlenül találta meg</label><br>
+                <input type="checkbox" name="nyolcadik4" id="nyolc4"><label for="nyolc4">A tűz elemét sikerült a legnehezebben megtanulnia</label><br>
+                <p id="eredmeny8" class="quiz_eredmeny"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Hogyan jutottak ki a Forrongó szikla börtönből?</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="kilencedik" id="kilenc1"><label for="kilenc1">A börtön parancsnok közreműködésével</label><br>
+                <input type="radio" name="kilencedik" id="kilenc2"><label for="kilenc2">Áthajóztak a forró vizen egy hütűcellában</label><br>
+                <input type="radio" name="kilencedik" id="kilenc3"><label for="kilenc3">Azula léghajójával</label><br>
+                <input type="radio" name="kilencedik" id="kilenc4"><label for="kilenc4">Appával, a repülőlénnyel</label><br>
+                <p id="eredmeny9" class="quiz_eredmeny"></p>
+            </td>   
+        </tr>
+        <tr>
+            <td>Melyik víztörzséből származik a történetben szereplő, királyi testvérpár?</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="tizedik" id="tiz1"><label for="tiz1">Déli</label><br>
+                <input type="radio" name="tizedik" id="tiz2"><label for="tiz2">Északi</label><br>
+                <input type="radio" name="tizedik" id="tiz3"><label for="tiz3">Mocsári</label><br>
+                <input type="radio" name="tizedik" id="tiz4"><label for="tiz4">Egyik sem, nem a Víz törzséből származnak</label><br>
+                <p id="eredmeny10" class="quiz_eredmeny"></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="gombok"><input type="button" value="Kész vagyok!" onclick="elkuldes()">
+                <input type="reset" value="Alaphelyzet" onClick="ures()">
+                <p id="eredmeny" class="quiz_eredmeny" style="text-align: center; font-size: 32px;"></p>
+                
+            </td>
+        </tr>
+    </table>
+</form>
+<img src="kepek/arrow.png" alt="Felfelé mutató nyíl" class="nyil" onclick="Fel()">
+    <footer>Az oldal kizárólag oktatási célokat szolgál. &copy; Tóth Marina Corvinus 2023</footer>
+    <script src="script_avatar.js">
+        
+        
+    </script>
+</body>
+</html>

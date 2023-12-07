@@ -1,0 +1,379 @@
+* {
+    box-sizing:border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(kepek/hatter.jpg);
+    padding: 0px;
+    margin: 0px;
+    font-family: "myAvatar", "Constantia", 'Times New Roman';
+
+    background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+
+}
+.container>*{margin:1%; height:fit-content;}
+
+@font-face {
+    font-family: "myAvatar";
+    src: url("font/Wellfleet-Regular.ttf");
+}
+.dark {
+    border: 1px whitesmoke solid;
+    color: whitesmoke;
+    background-color: black;
+}
+
+
+header {
+    padding: 30px;
+    padding-bottom: 5px;
+    margin: 0px;
+    /*background-color: #FBEFCA;*/
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+aside {
+    color: rgb(223, 169, 20);
+    padding: 15px;
+    text-align: left;
+}
+
+footer {
+    background-color: rgb(138, 69, 19);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;   
+}
+
+/*Menü*/
+
+nav {
+    
+    padding: 10px;
+	display: flex;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: auto;
+    padding: 5px;
+    width: 80%;
+}
+
+nav ul li a {
+    display:block;
+    padding: 10px ;
+    background-color: rgba(237, 225, 188, 0.816);
+    color: rgb(138, 69, 19);
+    border:1px solid rgb(138, 69, 19);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px;
+    font-size: 20px;
+}
+
+nav li a.active {
+    background-color: rgb(138, 69, 19);
+    color: rgb(245, 235, 206);
+}
+
+nav li a:hover {
+    background-color: rgb(138, 69, 19);
+    color: rgb(245, 235, 206);
+}
+
+/*Index*/
+img.fejlec {
+    height: 100px;
+}
+img.nyil {
+    height: 30px;
+    float: right;
+    padding-right: 10px;
+}
+article.szereplok {
+    background-color: rgba(237, 225, 188, 0.816);
+    padding: 0px;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;  
+    justify-content: center;    
+    color: #ffffff;
+    text-align: center;
+    flex: 1 1 80%;
+    margin-bottom: 10px;
+        
+}
+img.cast {
+    height: auto;
+    width:80%;
+    float: none;
+    margin:25px;
+    padding: 8px 0px;
+    
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: width 1s, height 1s;
+    flex: 1 1;
+}
+.nagyobb:hover {
+    width: 83%;
+    height: auto;
+    transition: width 1s, height 1s;
+}
+figure {
+    display: flex;
+    flex-flow: column wrap;
+}
+/*Quiz*/
+caption {
+    background-color: rgba(237, 225, 188, 0.816);
+}
+table.quiz {
+    color: rgb(138, 69, 19);
+    background-color: rgba(237, 225, 188, 0.816);
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+td{    
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+}
+
+td.quiz2 {
+    text-align: center;
+}
+
+.quizform {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+img.quiz2 {
+    width: 60%;
+    text-align: center;
+}
+
+.quiz_eredmeny {
+    text-align: right;
+    font-weight: bold;
+    
+}
+
+td.gombok {
+    text-align: center;
+}
+
+caption.quiz {
+    text-align: center;
+    font-size: 26px;
+    padding: 20px 0;
+    font-weight: bold;
+    
+}
+
+/*Kérdőív*/
+table.kerdoiv {
+    color: rgb(138, 69, 19);
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    background-color: rgba(237, 225, 188, 0.816);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+td.kerdoiv {
+    text-align: center;
+    padding: 15px 25px 15px 25px;
+}
+caption.kerdoiv {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0;
+    font-weight: bold;    
+}
+
+/*galéria*/
+.galleria {
+    margin: 5px 25px 10px 25px;
+    width: 90vw;
+    height: 90vw;   
+    background-color: rgba(247, 216, 123, 0.4); 
+}
+article.galleria {
+    height: 400px;
+    width: 45%;
+    justify-content: space-around;
+    padding: 0;
+    flex: 1 1 45%;
+}
+aside.world {
+    height: auto;
+    width: 75%;
+    text-align: justify;
+    padding-left: 15px;
+    margin-left: 10px;
+    padding-right: 15px;
+    margin-right: 10px;
+    background-color: rgba(237, 225, 188, 0.816);
+    border-radius: 5px;
+}
+.w_viz {
+    color: rgba(0, 30, 255, 0.674);
+}
+.w_fold {
+    color: green;
+}
+.w_tuz {
+    color: rgb(180, 6, 6);
+}
+.w_lev {
+    color: rgb(138, 69, 19);
+}
+
+
+/*személyiségteszt*/
+table.szemteszt {
+    color: rgb(138, 69, 19);
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    background-color: rgba(237, 225, 188, 0.816);
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+caption.szemteszt {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    color: rgb(223, 169, 20);
+}
+.kez {
+    float:right;
+}
+img.szemteszt{
+    width: 55%;
+    height: auto;
+}
+td.szemteszt {
+    text-align: center;
+}
+p.teszt_eredmeny {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+@media all and (min-width: 600px) {
+    /*tablet*/
+    nav ul{
+		flex-basis:23%;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    nav ul li a {
+        padding: 10px 25px;
+    }
+    img.cast{
+        
+        height: auto;
+        width:250px;
+    }
+    .nagyobb:hover {
+        width: 48%;
+        height: auto;
+        transition: width 1s, height 1s;
+    }
+    table.quiz {
+        
+        margin: auto;
+        padding: 15px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .quizform {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    img.quiz2 {
+        width: 35%;
+    }
+    aside.world{
+        width: 35%;
+    }
+    
+}
+@media all and (min-width: 768px) {
+    /*számítógép*/
+    nav {
+        flex-basis: 23%;
+        justify-content: center;
+        
+    }
+    nav ul li a {
+        padding: 10px 25px;
+    }
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+    img.cast{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        width:23%;
+    }
+    .nagyobb:hover {
+        width: 25%;
+        height: auto;
+        transition: width 1s, height 1s;
+    }
+	table.quiz {
+        
+        margin: auto;
+        padding: 15px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .quizform {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    img.quiz2 {
+        width: 30%;
+    }
+    aside.world{
+        width: 35%;
+    }
+    
+}

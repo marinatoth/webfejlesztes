@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta name="author" content="Tóth Marina">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <meta name="deccribtion" content="Avatar: Az utolsó léghajlító animációs sorozat bemutatása">
+
+    <title>A:TLA - Kérdőív</title>
+    <link rel="shortcut icon" href="kepek/favicon/favicon_siklo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="urlap_validalas/jquery-3.7.1.min.js"></script>
+    <script src="urlap_validalas/jquery-validation-1.19.5/dist/jquery.validate.js"></script>
+    <script src="script_avatar.js"></script>
+    <script>
+      $(document).ready(function(){
+      $("#kerdoivform").validate({
+  
+      rules: {
+      latotthoz: "required",
+      szulido: "required",
+      nev: {
+      required: true,
+      minlength:2,
+      },
+      kor: "required",
+      ujra: {
+      required: true,
+      },
+      feliratkozo: {
+      required: true,
+      email: true
+      },
+      },
+      messages: {
+      latotthoz: "<br>Kérlek írd be melyiket ismered!",
+      szulido: "<br>Add meg a születési dátumod!",
+      nev: "<br>Írd be egy karakter nevét!",
+      kor: "<br>Add meg hány éves voltál!",
+      ujra: "<p>Válassz egyet!</p>",
+      
+      feliratkozo: "<br>Valós email címet adj meg!",
+      },
+      });
+      });
+    </script>
+    <style>
+        label.error {
+            color: #FB3A3A;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header><a href="index.html"><img class="fejlec" src="kepek/fejlec.png" alt="Avatar"></a></header>
+    <nav>
+        <ul>
+            <li><a href="index.html" >Szereplők</a></li>
+            <li><a href="world.html">Elemek</a></li>
+            <li><a href="szemteszt.html">Személyiségteszt</a></li>
+            <li><a href="quiz.html" >Quiz</a></li>
+            <li><a href="#" class="active">Kérdőív</a></li>
+         </ul>
+        </nav>
+    <form id="kerdoivform" class="quizform" method="post" action="http://szamtud.uni-corvinus.hu/receive.php">
+        <table class="kerdoiv">
+            <caption class="kerdoiv">Kérdőív</caption>
+            <tr>                
+                <td class="kerdoiv"><label for="elsohoz">Láttad az Avatar: Az utolsó léghajlítót vagy az Avatar: Korra legendját?<br>Egyiket sem? Mindkettőt?</label>
+                    <input type="text" list="elso" id="elsohoz"  name="latotthoz" placeholder="Írd ide melyiket." autofocus>
+                    <datalist id="elso">
+                        <option value="Avatar: Az utolsó léghajlító"></option>
+                        <option value="Avatar: Korra legendja"></option>
+                        <option value="Mindkettőt"></option>
+                        <option value="Egyiket sem"></option>
+                    </datalist>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="kerdoiv"><label for="masodik">Mikor születtél?</label>
+                    <input type="date" name="szulido" id="masodik" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="kerdoiv"><label for="harmadik">Ki a kedvenc karaktered vagy ki a legszínpatikusabb?</label>
+                    <input type="text" size="30" placeholder="Aang" name="nev" id="harmadik" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="kerdoiv"><label for="negyedik">Hány évesen hallottál először az Avatarról?</label>
+                    <input type="number" name="kor" id="negyedik" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="kerdoiv"><label for="otodikI">Újra néznéd a sorozatot a jövőben vagy kedvet kaptál, ahhoz, hogy megnézd?</label><br>
+                    <label for="otodikI">Igen</label><input type="radio" name="ujra" id="otodikI" value="igen">
+                    <label for="otodikN">Nem</label><input type="radio" name="ujra" id="otodikN" value="nem"><br>
+                    <label for="otodikT">Talán</label><input type="radio" name="ujra" id="otodikT" value="talan">
+                </td>
+            </tr>
+            <tr>
+                <td class="kerdoiv"><label for="hatodik">Mennyire tetszett az Avatar története, mennyire szeretnéd megismerni?</label><br>
+                    <input type="range" min="1" max="10" step ="1" value ="1" name="tetszett" id="hatodik">                    
+                </td>
+            </tr>
+            <tr>
+                <td class="kerdoiv"><label for="hetedik">Mennyire vagy elégedett a weboldal információival?</label><br>
+                    <input type="range" min="1" max="10" step ="1" value ="1" name="elegedett" id="hetedik">
+                </td>
+            </tr>
+            <tr>
+                <td class="kerdoiv"><label for="nyolcadik">Email címed megadásával tudsz feliratkozni:</label><br>
+                    <input type="email" name="feliratkozo" id="nyolcadik">
+                </td>
+            </tr>
+            <tr>
+                <td class="kerdoiv">
+                    <input type="submit" name="kuldes" id="kuld" value="Elküldés">
+                    <input type="button" name="torles" id="torol" value="Alaphelyzet" onclick="window.location.reload()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <img src="kepek/arrow.png" alt="Felfelé mutató nyíl" class="nyil" onclick="Fel()">
+    <footer>Az oldal kizárólag oktatási célokat szolgál. &copy; Tóth Marina Corvinus 2023</footer>
+</body>
+</html>
